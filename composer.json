@@ -1,0 +1,16 @@
+{
+    "require": {
+        "monolog/monolog": "1.*",
+        "slim/slim": "2.*",
+        "slim/views": "0.*",
+        "twig/twig": "1.*",
+        "catfan/medoo": "0.9.*",
+		"swiftmailer/swiftmailer":"@stable",
+		"eventviva/php-image-resize": "1.5.*"
+    },
+	"autoload":{
+		"psr-0":{
+			"":"app/"
+		}
+    }
+}

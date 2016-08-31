@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - stok@localhost" uuid="136bfb73-0952-4534-9f28-bb0c3c67d56e">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-scope>stok:</introspection-scope>
+      <resolve-scope>stok:</resolve-scope>
+    </data-source>
+  </component>
+</project>

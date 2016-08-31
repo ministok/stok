@@ -1,0 +1,26 @@
+RewriteEngine On
+
+# Some hosts may require you to use the `RewriteBase` directive.
+# If you need to use the `RewriteBase` directive, it should be the
+# absolute physical path to the directory that contains this htaccess file.
+#
+# RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+
+
+
+<FilesMatch "\.(gif|jpe?g|png|ico|css|js|swf)$">
+ Header set Cache-Control "max-age=172800, public, must-revalidate"
+</FilesMatch>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+############################################
+## Add default Expires header
+## http://developer.yahoo.com/performance/rules.html#expires
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|woff2)$">
+ExpiresDefault "access plus 1 year"
+</FilesMatch>
+</IfModule>
