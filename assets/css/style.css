@@ -1,3 +1,95 @@
+body{
+    background-color: #EDECEC;
+}
+header[role=navigation]{
+    height: 210px;
+}
+#logo-container {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: initial;
+    top: 50px;
+    color:#FFF;
+    position: absolute;
+}
+#logo-container span{
+    opacity: 0.6;
+    display: block;
+
+}
+.search-box {
+    margin-top:35px;
+}
+
+.search-box nav{
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 4px;
+}
+.search-box nav , .search-box  nav .nav-wrapper i{
+    height: 50px;
+    line-height: 50px;
+}
+::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #FFFFFF;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #FFFFFF;
+}
+
+:-ms-input-placeholder {
+    color: #FFFFFF;
+}
+.user-login {
+    margin-top:45px;
+}
+.collection{
+    border:none;
+}
+.collection a.collection-item {
+    background-color: transparent;
+    color: #4C4C4C;
+}
+.content {
+    background-color: #fff;
+    margin-top: -75px;
+    min-height:500px!important;
+}
+.breadcrumb-container{
+    background-color: transparent;
+    box-shadow: none;
+}
+.breadcrumb-container .breadcrumb,.breadcrumb:before {
+    color:#4C4C4C;
+}
+.breadcrumb:before{
+    color: rgba(76,76,76,0.7);
+}
+.breadcrumb-container .nav-small-text{
+    color: #ACACAC;
+    font-size:15px;
+    font-weight: 400;
+    line-height:0;
+}
+.shortcuts {
+    position: absolute;
+    top: 135px;
+}
+.shortcuts a{
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: none;
+    margin-right: 15px;
+    width: 44px;
+    height: 44px;
+}
+.shortcuts i.material-icons{
+    line-height: 42px;
+    font-size: 22px;
+}
 .icon-block {
     padding: 0 15px;
 }

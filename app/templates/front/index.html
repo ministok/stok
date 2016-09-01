@@ -19,25 +19,70 @@
 </head>
 <body>
 
-<nav class="light-blue lighten-1" role="navigation">
-	<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-		<ul class="right hide-on-med-and-down">
-			<li><a href="#">Navbar Link</a></li>
-		</ul>
+<header class="teal" role="navigation">
+	<div class="nav-wrapper container">
+		<div class="row">
+			<a id="logo-container" href="#" class="brand-logo">Mini Stok<span>uygulaması</span></a>
+			<div class="shortcuts">
+				<a class="waves-effect waves-light btn btn-floating "><i class="material-icons left">notifications</i>button</a>
+				<a class="waves-effect waves-light btn btn-floating "><i class="material-icons left">email</i>button</a>
+				<a class="waves-effect waves-light btn btn-floating "><i class="material-icons left">backup</i>button</a>
+			</div>
 
-		<ul id="nav-mobile" class="side-nav">
-			<li><a href="#">Navbar Link</a></li>
-		</ul>
-		<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+			<div class="search-box col s6 offset-s3" >
+				<nav>
+					<div class="nav-wrapper">
+						<form>
+							<div class="input-field">
+								<input id="search" type="search" placeholder="Barkod yada Ürün Adı" required>
+								<label for="search"><i class="material-icons">search</i></label>
+								<i class="material-icons">close</i>
+							</div>
+						</form>
+					</div>
+				</nav>
+			</div>
+			<div class="right user-login">
+				<div class="chip">
+					<img  src="{{assets('img/john.png')}}" alt="Contact Person">
+					Ahmet Düzgidenoğuları
+				</div>
+			</div>
+		</div>
 	</div>
-</nav>
-<div class="section no-pad-bot" id="index-banner">
+</header>
+<div class="section no-pad-top" id="index-banner">
 	<div class="container">
-		{%block content%}
-		{%endblock%}
+		<div class="row">
+			<div class="col s2 no-pad-left no-pad-right">
+				<div class="collection">
+					<a href="#!" class="collection-item">
+						<i class="material-icons left">home</i>Anasayfa
+					</a>
+					<a href="#!" class="collection-item">
+						<i class="material-icons left">local_offer</i>Ürünler
+					</a>
+					<a href="#!" class="collection-item">
+						<i class="material-icons left">assignment</i>Girdiler/Çıktılar
+					</a>
+					<a href="#!" class="collection-item">
+						<i class="material-icons left">attach_money</i>Borçlar
+					</a>
+					<a href="#!" class="collection-item">
+						<i class="material-icons left">assessment</i>Raporlar
+					</a>
+				</div>
+			</div>
+			<div class="col s10 content">
+			{%block content%}
+
+			{%endblock%}
+			</div>
+		</div>
 	</div>
+
 </div>
-<footer class="page-footer orange">
+<footer class="page-footer teal">
 	<div class="container">
 		<div class="row">
 			<div class="col l6 s12">

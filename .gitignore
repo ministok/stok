@@ -1,7 +1,8 @@
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
-
+vendor
+app/templates/cache/
 # Folder config file
 Desktop.ini
 
